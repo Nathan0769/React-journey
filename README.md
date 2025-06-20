@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# React Journey — Workshop composants React
 
-## Getting Started
+Une application Next.js avec Tailwind CSS qui liste des concepts React classés par catégorie. Elle sert d’exemple pratique pour comprendre le routage, le filtrage via URL, et la composition de composants UI modulaires.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📝 Description
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Application décomposée en 3 étapes : création de la structure et header, ajout d’un menu latéral, affichage dynamique de cartes
+- Header avec logo React SVG intégré et boutons interactifs stylisés avec `cva`
+- Menu latéral pour filtrer les concepts par catégorie via les paramètres d’URL (`SearchParams`)
+- Composants cartes affichant les données récupérées, avec boutons d’action et lien vers la doc React
+- Utilisation de Next.js App Router pour gérer la navigation et le rendu côté serveur/client
+- Stylisation complète avec Tailwind CSS, facilitant un design rapide et responsive
+- Intégration d’icônes via `lucide-react` (`ShoppingBasket`, `User`, `BookOpenText`, `PlusCircle`)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Techniques utilisées
 
-## Learn More
+- Next.js App Router : navigation déclarative moderne et layout imbriqués
+- Tailwind CSS : classes utilitaires pour styling rapide sans CSS complexe
+- URLSearchParams : gestion fine des filtres via l’URL pour un état partageable
+- Intersection Observer API : utilisée pour du lazy loading ou des animations conditionnelles
+- class-variance-authority (`cva`) : gestion propre et déclarative des variantes de composants UI
+- Intégration directe de composants SVG React pour un rendu rapide du logo
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🧰 Technologies et bibliothèques notables
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- React — bibliothèque UI déclarative
+- Next.js — framework React full-stack
+- Tailwind CSS — framework CSS utility-first
+- lucide-react — bibliothèque d’icônes SVG moderne
+- class-variance-authority (`cva`) — gestion des variantes de composants
+- Fonts par défaut de Tailwind (option d’ajouter Inter ou autre)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📁 Structure du projet
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+\`\`\`plaintext
+.
+├── app/
+│ ├── layout.jsx # Layout global de l’application
+│ └── page.jsx # Page d’accueil principale avec logique de filtrage
+├── src/
+│ └── components/ # Composants React réutilisables (Header, Button, Card, Menu)
+├── data/ # Données statiques des concepts React classés par catégorie
+├── public/
+│ └── images/ # Assets statiques (ex : logo SVG si utilisé en image)
+├── styles/ # Configuration Tailwind CSS et styles globaux
+\`\`\`
+
+**Détails**
+
+- `src/components/` : tous les composants UI de l’application
+- `data/` : données des cartes, utilisées pour alimenter les vues
+- `public/images/` : images et icônes statiques accessibles publiquement
