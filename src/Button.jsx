@@ -1,7 +1,7 @@
 import { cva } from "class-variance-authority";
 
-export const buttonVariants = cva(
-  "inline-flex items-center justify-center rounded-md px-3 py-1.5 m-1.5 ring-indigo-500 ring-offset-2 focus:outline-none focus:ring",
+const buttonVariants = cva(
+  "inline-flex items-center justify-center rounded-md px-3 py-1.5 m-1.5 ring-indigo-500 ring-offset-2 focus:outline-none focus:ring cursor-pointer",
   {
     variants: {
       variant: {
