@@ -12,7 +12,7 @@ Une application Next.js avec Tailwind CSS qui liste des concepts React classés 
 - Composants cartes affichant les données récupérées, avec boutons d’action et lien vers la doc React
 - Utilisation de Next.js App Router pour gérer la navigation et le rendu côté serveur/client
 - Stylisation complète avec Tailwind CSS, facilitant un design rapide et responsive
-- Intégration d’icônes via `lucide-react` (`ShoppingBasket`, `User`, `BookOpenText`, `PlusCircle`)
+- Intégration d’icônes via `lucide-react`
 
 ---
 
@@ -32,9 +32,8 @@ Une application Next.js avec Tailwind CSS qui liste des concepts React classés 
 - React — bibliothèque UI déclarative
 - Next.js — framework React full-stack
 - Tailwind CSS — framework CSS utility-first
-- lucide-react — bibliothèque d’icônes SVG moderne
+- lucide-react — bibliothèque d’icônes
 - class-variance-authority (`cva`) — gestion des variantes de composants
-- Fonts par défaut de Tailwind (option d’ajouter Inter ou autre)
 
 ---
 
@@ -52,9 +51,8 @@ Une application Next.js avec Tailwind CSS qui liste des concepts React classés 
 │   └── images/
 ├── styles/
 
-**Détails**
-
-- `src/components/` : tous les composants UI de l’application
-- `data/` : données des cartes, utilisées pour alimenter les vues
-- `public/images/` : images et icônes statiques accessibles publiquement
 ```
+
+---
+
+Développé pour apprendre la structuration d’une application React moderne avec Next.js, la composition de composants réutilisables et la gestion de l’état via l’URL, le tout sans backend.

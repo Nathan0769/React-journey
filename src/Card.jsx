@@ -1,5 +1,5 @@
 "use client";
-import { REACT_CARDS } from "./react-cards";
+import { REACT_CARDS } from "./React-cards";
 import { Button, buttonVariants } from "./Button";
 import { ReactSvg } from "./ReactSvg";
 import { useSearchParams } from "next/navigation";

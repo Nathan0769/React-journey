@@ -1,5 +1,5 @@
 "use client";
-import { REACT_CARDS } from "./react-cards";
+import { REACT_CARDS } from "./React-cards";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { Fragment } from "react";
