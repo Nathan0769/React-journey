@@ -1,3 +1,4 @@
+"use client";
 import { CardList } from "@/src/Card";
 import Header from "@/src/Header";
 import Menu from "@/src/Menu";
