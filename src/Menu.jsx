@@ -3,6 +3,7 @@ import { REACT_CARDS } from "./React-cards";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { Fragment } from "react";
+import { Suspense } from "react";
 
 const CategoriesMenu = () => {
   const searchParams = useSearchParams();
@@ -37,7 +38,9 @@ const CategoriesMenu = () => {
 export const Menu = () => {
   return (
     <nav className="flex w-full flex-wrap gap-4 lg:max-w-[200px] lg:flex-col">
-      <CategoriesMenu />
+      <Suspense fallback={<div>Loading menu...</div>}>
+        <CategoriesMenu />
+      </Suspense>
     </nav>
   );
 };

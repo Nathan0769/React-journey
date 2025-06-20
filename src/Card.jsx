@@ -5,6 +5,7 @@ import { ReactSvg } from "./ReactSvg";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { BookOpenText, PlusCircle } from "lucide-react";
+import { Suspense } from "react";
 
 export const Card = () => {
   const searchParams = useSearchParams();
@@ -64,7 +65,9 @@ export const CardList = () => {
   return (
     <div className="size-full overflow-auto">
       <div className="grid h-fit w-full grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <Card />
+        <Suspense fallback={<div>Loading...</div>}>
+          <Card />
+        </Suspense>
       </div>
     </div>
   );
