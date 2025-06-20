@@ -40,21 +40,21 @@ Une application Next.js avec Tailwind CSS qui liste des concepts React classés 
 
 ## 📁 Structure du projet
 
-\`\`\`plaintext
+```plaintext
 .
 ├── app/
-│ ├── layout.jsx # Layout global de l’application
-│ └── page.jsx # Page d’accueil principale avec logique de filtrage
+│   ├── layout.jsx
+│   └── page.jsx
 ├── src/
-│ └── components/ # Composants React réutilisables (Header, Button, Card, Menu)
-├── data/ # Données statiques des concepts React classés par catégorie
+│   └── components/
+├── data/
 ├── public/
-│ └── images/ # Assets statiques (ex : logo SVG si utilisé en image)
-├── styles/ # Configuration Tailwind CSS et styles globaux
-\`\`\`
+│   └── images/
+├── styles/
 
 **Détails**
 
 - `src/components/` : tous les composants UI de l’application
 - `data/` : données des cartes, utilisées pour alimenter les vues
 - `public/images/` : images et icônes statiques accessibles publiquement
+```
