@@ -9,7 +9,7 @@ import { Suspense } from "react";
 
 export const Card = () => {
   const searchParams = useSearchParams();
-  const filter = searchParams.get("filter");
+  const filter = searchParams.get("filter") || "all";
 
   return (
     <>
